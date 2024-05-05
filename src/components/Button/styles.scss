@@ -1,0 +1,32 @@
+.button {
+  padding: 8px 24px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  width: fit-content;
+  border: none;
+}
+
+.success {
+  background-color: green;
+
+  &:active {
+    background-color: darkgreen;
+  }
+}
+
+.outline {
+  background-color: white;
+  color: black;
+  border: 1px solid lightgray;
+
+  &:active {
+    background-color: lightgray;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
