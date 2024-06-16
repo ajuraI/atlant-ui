@@ -3,7 +3,6 @@ import Input from './Input';
 import './styles.scss';
 
 const meta = {
-  title: 'Input',
   component: Input,
   parameters: {
     layout: 'padded',

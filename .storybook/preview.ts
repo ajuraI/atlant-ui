@@ -8,10 +8,7 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-    docs: {
-      inlineStories: false
-    }
-  },
+  }
 };
 
 export default preview;

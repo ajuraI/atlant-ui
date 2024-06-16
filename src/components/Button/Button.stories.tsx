@@ -1,32 +1,32 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
-import Button from './Button';
-import { ButtonDesign } from "./constants.ts";
-import './styles.scss';
+import {Meta, type StoryObj} from '@storybook/react';
+
+import Button from '../Button/Button';
+import {ButtonDesign} from "./constants.ts";
 
 const meta = {
-  title: 'Button',
   component: Button,
-  parameters: {
-    layout: 'padded',
-  },
   tags: ['autodocs'],
-  args: { onClick: fn() },
-  argTypes: {
-    design: {
-      control: 'inline-radio',
-      options: Object.values(ButtonDesign),
-    },
-  }
-} satisfies Meta<typeof Button>;
+  args: {
+    design: ButtonDesign.Outline,
+    label: 'Knopka',
+  },
+} as Meta;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Success: Story = {
   args: {
-    label: 'Button',
     design: ButtonDesign.Success,
-    fullWidth: false,
+    label: 'Knopka',
   },
 };
+Success.storyName = 'Success';
+
+export const Outline: Story = {
+  args: {
+    design: ButtonDesign.Outline,
+    label: 'Knopka',
+  },
+};
+Outline.storyName = 'Outline';

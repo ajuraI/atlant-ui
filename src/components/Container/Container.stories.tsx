@@ -3,7 +3,6 @@ import Container from './Container';
 import './styles.scss';
 
 const meta = {
-  title: 'Container',
   component: Container,
   tags: ['autodocs'],
   args: { children: <div style={{ width: '100%', height: '160px', backgroundColor: 'lightgray' }} /> },

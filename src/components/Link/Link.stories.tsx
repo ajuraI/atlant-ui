@@ -3,7 +3,6 @@ import Link from './Link';
 import './styles.scss';
 
 const meta = {
-  title: 'Link',
   component: Link,
   parameters: {
     layout: 'padded',
