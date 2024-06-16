@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "repository": "https://github.com/ajuraI/atlant-ui",
   "type": "module",
+  "sideEffects": [
+    "*.css",
+    "*.scss"
+  ],
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",

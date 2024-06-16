@@ -1,7 +1,7 @@
 import React from 'react';
 import { ButtonDesign } from './constants.ts';
 import { getButtonClassName } from './utils';
-import './styles.scss';
+import './Button.styles.scss';
 
 type Props = {
   label: string;

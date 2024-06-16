@@ -1,6 +1,6 @@
 import React from 'react';
 import { getLinkClassName } from './utils';
-import './styles.scss';
+import './Link.styles.scss';
 
 type Props = {
   text: string;

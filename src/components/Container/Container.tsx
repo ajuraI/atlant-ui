@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import './Container.styles.scss';
 import buildClass from '../../utils/buildClass.ts';
 
 type Props = {
