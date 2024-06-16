@@ -1,7 +1,7 @@
 {
   "name": "atlant-ui",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": "https://github.com/ajuraI/atlant-ui",
   "type": "module",
   "main": "./dist/index.umd.js",
