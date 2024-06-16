@@ -3,21 +3,28 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
+    "build": "vite build",
     "sb": "storybook dev -p 6006",
-    "sb:build": "storybook build",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "sb:build": "storybook build"
   },
   "dependencies": {
     "@storybook/addons": "7.6.17",
     "@storybook/manager-api": "8.1.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-babel-macros": "1.0.6",
+    "vite-plugin-dts": "3.9.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.5.0",
